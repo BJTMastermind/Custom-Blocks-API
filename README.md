@@ -4,7 +4,7 @@
 
 ## Plan To Add / To Do
 
-- [ ] Replace Armor Stands with Item Frames in 1.17+
+- [ ] Replace Armor Stands with Glow Item Frames in 1.17+
 
 ## How To Use
 
