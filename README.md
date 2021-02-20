@@ -24,4 +24,10 @@ This is a small datapack that allows you to merge all your custom blocks into 1 
 
 # Screen Shots
 
-Coming Soon.
+### TPS with 16 Custom Blocks loaded Before:
+![before](https://user-images.githubusercontent.com/18742837/108583496-b14ae780-7331-11eb-8714-2c579de636e3.png)
+
+<hr>
+
+### TPS with 16 Custom Blocks loaded After using this datapack:
+![2021-02-19_23 09 03](https://user-images.githubusercontent.com/18742837/108583497-b445d800-7331-11eb-883c-6cede3e5ec75.png)
