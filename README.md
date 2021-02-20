@@ -1,28 +1,26 @@
-<h1 align="center">Template Repository</h1>
+<h1 align="center">Custom Blocks API</h1>
 
-  A Template Repository That I Can Use to Make New Repositories I Make in The Future Easier.                                                                                         
+  Allows you to create custom blocks in Minecraft Easier with great performance!                                                                                         
 
 ## Plan To Add / To Do
 
-- [ ] Item 1
-- [ ] Item 2
-- [ ] Item 3
+- [ ] Replace Armor Stands with Item Frames in 1.17+
 
-## How To Use (UI)
+## How To Use
 
-Coming Soon.
+### Give Command
+```mcfunction
+give @p dropper{display:{Name:'{"text":"A Name","italic":false}',Lore:['{"text":"A Lore","italic":false,"color":"red"}']},CustomModelData:0000001,BlockEntityTag:{Lock:"CustomBlocks:Block"},BlockProperties:{CustomName:'{"text":"Block"}',SetblockCommand:"setblock ~ ~ ~ stone"}}
+```
+You first put your placer block (Must be: Furnace, Dropper, or Dispenser as non rotating block) then spcify its properites like the display name, an option lore, the custom model data value, the lock <b>Must be CustomBlocks:Block</b> which tells the pack that its a custom block, then inside "BlockProperties" you add any extra info to give the armor stand and set the base block for when placed in the world.
 
-## How To Use (Command Line)
+## Minimum Minecraft Version
 
-Coming Soon.
-
-## Minimum \<Insert Language Here> Version
-
-* Version of Language 
+* 1.16.4 
 
 ## About This Project
 
-This is a template repository that I can use to make new repositories I make in the future easier.
+This is a small datapack that allows you to merge all your custom blocks into 1 with greatly improves performance
 
 # Screen Shots
 
