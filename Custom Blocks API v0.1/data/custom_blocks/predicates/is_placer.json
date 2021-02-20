@@ -1,0 +1,11 @@
+{
+	"condition": "entity_properties",
+	"entity": "this",
+	"predicate": {
+		"equipment": {
+			"head": {
+				"tag": "custom_blocks:placers"
+			}
+		}
+	}
+}
