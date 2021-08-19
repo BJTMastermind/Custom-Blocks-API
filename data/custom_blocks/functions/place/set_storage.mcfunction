@@ -1,8 +1,9 @@
 # Resets Storage After Player Places Custom Block Or Deselects It
-execute as @a[gamemode=creative,predicate=custom_blocks:selected_placer] run function custom_blocks:place/reset_storage
+execute as @a[gamemode=creative,predicate=!custom_blocks:selected_placer] run function custom_blocks:place/reset_storage
 
 # Saves All Block Info Into A Storage For When Placing
 data modify storage custom_blocks:current_block CustomModelData set from entity @s SelectedItem.tag.CustomModelData
+data modify storage custom_blocks:current_block CustomModelDataVertical set from entity @s SelectedItem.tag.CustomModelDataVertical
 execute if entity @s[predicate=custom_blocks:selected_placer] run data modify storage custom_blocks:current_block id set from entity @s SelectedItem.id
 data modify storage custom_blocks:current_block DisplayName set from entity @s SelectedItem.tag.display.Name
 data modify storage custom_blocks:current_block Lore set from entity @s SelectedItem.tag.display.Lore
