@@ -1,10 +1,6 @@
 <h1 align="center">Custom Blocks API</h1>
 
-  Allows you to create custom blocks in Minecraft Easier with great performance!                                                                                         
-
-## Plan To Add / To Do
-
-- [x] Replace Armor Stands with Glow Item Frames in 1.17+
+  Allows you to create custom blocks in Minecraft Easier with great performance!                                                                                   
 
 ## How To Use
 To use the Custom Blocks API simply include it alongside your datapack and ensure to use the following for your custom blocks.
