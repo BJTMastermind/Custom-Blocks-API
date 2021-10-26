@@ -4,6 +4,7 @@ data remove storage custom_blocks:drop_block DisplayName
 data remove storage custom_blocks:drop_block Lore
 data remove storage custom_blocks:drop_block CustomModelData
 data remove storage custom_blocks:drop_block CustomModelDataVertical
+data remove storage custom_blocks:drop_block FrameModel
 data remove storage custom_blocks:drop_block CustomName
 data remove storage custom_blocks:drop_block Tags
 data remove storage custom_blocks:drop_block SetblockCommand
