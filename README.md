@@ -8,7 +8,7 @@ To use the Custom Blocks API simply include it alongside your datapack and ensur
 ### Give Command
 If your pack includes a custom give command this is what the function should look like with this API:
 ```mcfunction
-give @p dropper{display:{Name:'{"text":"A Name","italic":false}',Lore:['{"text":"A Lore","italic":false,"color":"red"}']},CustomModelData:0000001,CustomModelDataVertical:0000002,BlockEntityTag:{Lock:"CustomBlocks:Block"},BlockProperties:{CustomName:'{"text":"Block"}',SetblockCommand:"setblock ~ ~ ~ stone"}}
+give @p dropper{display:{Name:'{"text":"A Name","italic":false}',Lore:['{"text":"A Lore","italic":false,"color":"red"}']},CustomModelData:0000001,CustomModelDataVertical:0000002,BlockEntityTag:{Lock:"CustomBlocks:Block"},BlockProperties:{CustomName:'{"text":"Block"}',FrameModel:0000003,SetblockCommand:"setblock ~ ~ ~ stone"}}
 ```
 <!--<p align="center">You first put your placer block (Must be: Furnace, Dropper, or Dispenser as non rotating block) then spcify its properites like the display name, an option lore, the custom model data value, the lock <b>Must be CustomBlocks:Block</b> which tells the pack that its a custom block, then inside "BlockProperties" you add any extra info<br> to give the armor stand and set the base block for when placed in the world.</p>-->
 
@@ -25,7 +25,7 @@ This tells the API that your block uses this Custom Blocks API system.
 
 Then add your custom block name and an optional lore for the block. Outside the display tag add your custom blocks CustomModelData value and optionaly the CustomModelDataVertical value too, which is the model for when its placed facing up or down.
 
-Finally, add any extra information about the block for when it's placed in the "BlockProperties" tag. All the information in this tag will be copied to the Glow Item Frame, and the "SetblockCommand" in BlockProperties says what you want your base block to be.
+Finally, add any extra information about the block for when it's placed in the "BlockProperties" tag. All the information in this tag will be copied to the Glow Item Frame, the "SetblockCommand" in BlockProperties says what you want your base block to be, and "FrameModel" in BlockProperties says what the item should look like when placed in a item frame by the player.
 
 For help on how to set these up see the above give command for an example.
 
