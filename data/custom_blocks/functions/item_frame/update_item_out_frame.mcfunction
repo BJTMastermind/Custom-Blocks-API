@@ -4,6 +4,4 @@
 data modify entity @s Item.tag.CustomModelData set from entity @s Item.tag.CustomModelDataNorm
 data modify entity @s Item.tag.display.Name set from entity @s Item.tag.displayName
 data remove entity @s Item.tag.CustomModelDataNorm
-data remove entity @s Item.tag.displayName 
-
-
+data remove entity @s Item.tag.displayName

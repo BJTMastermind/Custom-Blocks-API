@@ -7,4 +7,3 @@ data remove storage custom_blocks:current_block CustomModelDataVertical
 data remove storage custom_blocks:current_block CustomName
 data remove storage custom_blocks:current_block Tags
 data remove storage custom_blocks:current_block SetblockCommand
-

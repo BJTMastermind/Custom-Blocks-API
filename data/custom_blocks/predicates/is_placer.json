@@ -1,26 +1,26 @@
 {
-	"condition": "alternative",
-	"terms": [
-		{
-			"condition": "entity_properties",
-			"entity": "this",
-			"predicate": {
-				"nbt": "{Item:{\"id\":\"minecraft:furnace\"}}"
-			}
-		},
-		{
-			"condition": "entity_properties",
-			"entity": "this",
-			"predicate": {
-				"nbt": "{Item:{\"id\":\"minecraft:dropper\"}}"
-			}
-		},
-		{
-			"condition": "entity_properties",
-			"entity": "this",
-			"predicate": {
-				"nbt": "{Item:{\"id\":\"minecraft:dispenser\"}}"
-			}
-		}
-	]
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Item:{\"id\":\"minecraft:furnace\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Item:{\"id\":\"minecraft:dropper\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Item:{\"id\":\"minecraft:dispenser\"}}"
+            }
+        }
+    ]
 }

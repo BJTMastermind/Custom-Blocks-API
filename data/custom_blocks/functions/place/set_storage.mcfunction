@@ -11,8 +11,5 @@ data modify storage custom_blocks:current_block CustomName set from entity @s Se
 data modify storage custom_blocks:current_block Tags set from entity @s SelectedItem.tag.BlockProperties.Tags
 data modify storage custom_blocks:current_block SetblockCommand set from entity @s SelectedItem.tag.BlockProperties.SetblockCommand
 
-
 # Runs The Check Block Function
 function custom_blocks:place/check_for_block
-
-

@@ -6,5 +6,3 @@ data modify entity @s Item.tag.CustomModelData set from entity @s Item.tag.Block
 data modify entity @s Item.tag.displayName set from entity @s Item.tag.display.Name
 data modify entity @s Item.tag.display.Name set value ""
 tag @s add updated
-
-
