@@ -1,7 +1,0 @@
-{
-    "condition": "entity_properties",
-        "entity": "this",
-        "predicate": {
-            "nbt": "{Item:{tag:{BlockEntityTag:{Lock:\"CustomBlocks:Block\"}}}}"
-        }
-}

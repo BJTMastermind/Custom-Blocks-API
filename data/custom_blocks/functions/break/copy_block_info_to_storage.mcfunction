@@ -1,9 +1,8 @@
-data modify storage custom_blocks:drop_block id set from entity @s Item.id
-data modify storage custom_blocks:drop_block DisplayName set from entity @s Item.tag.display.CustomName
-data modify storage custom_blocks:drop_block Lore set from entity @s Item.tag.display.Lore
-data modify storage custom_blocks:drop_block CustomModelDataVertical set from entity @s Item.tag.CustomModelDataVertical
-data modify storage custom_blocks:drop_block CustomModelData set from entity @s Item.tag.CustomModelData
-data modify storage custom_blocks:drop_block CustomModelData set from entity @s Item.tag.CustomModelDataNorm
+data modify storage custom_blocks:drop_block id set from entity @s item.id
+data modify storage custom_blocks:drop_block DisplayName set from entity @s item.tag.display.CustomName
+data modify storage custom_blocks:drop_block Lore set from entity @s item.tag.display.Lore
+data modify storage custom_blocks:drop_block CustomModelData set from entity @s item.tag.CustomModelData
+data modify storage custom_blocks:drop_block CustomModelData set from entity @s item.tag.CustomModelDataNorm
 data modify storage custom_blocks:drop_block CustomName set from entity @s CustomName
-data modify storage custom_blocks:drop_block Tags set from entity @s Item.tag.BlockProperties.Tags
-data modify storage custom_blocks:drop_block SetblockCommand set from entity @s Item.tag.BlockProperties.SetblockCommand
+data modify storage custom_blocks:drop_block Tags set from entity @s item.tag.BlockProperties.Tags
+data modify storage custom_blocks:drop_block SetblockCommand set from entity @s item.tag.BlockProperties.SetblockCommand

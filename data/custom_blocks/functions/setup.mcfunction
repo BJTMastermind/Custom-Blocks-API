@@ -1,5 +1,7 @@
 gamerule commandBlockOutput false
 gamerule logAdminCommands false
 
-scoreboard objectives add cbCompareResult dummy
-scoreboard players set #match cbCompareResult 1
+scoreboard objectives add cbCalcModel dummy
+
+# Remove old scoreboard objective
+scoreboard objectives remove cbCompareResult
