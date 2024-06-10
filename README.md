@@ -8,7 +8,7 @@ To use the Custom Blocks API simply include it alongside your datapack and ensur
 ### Give Command
 If your pack includes a custom give command this is what the function should look like with this API:
 ```mcfunction
-give @s dropper{display:{Name:'{"text":"A Name","italic":false}',Lore:['{"text":"A Lore","italic":false,"color":"red"}']},CustomModelData:0000001,BlockEntityTag:{Lock:"CustomBlocks:Block"},BlockProperties:{Tags:["some_tag_for_this_block"],BaseBlock:{"value":"stone"}}}
+give @s dropper[item_name='{"text":"A Name"}',lore=['{"text":"A Lore","italic":false,"color":"red"}'],custom_model_data="0000001",lock="custom_blocks:block",custom_data={block_properties:{Tags:["some_tag_for_this_block"],base_block:{value:"stone"}}}]
 ```
 
 To set up your custom blocks with this API simple add the custom models to one of the following blocks with "custom_model_data":
@@ -19,18 +19,18 @@ To set up your custom blocks with this API simple add the custom models to one o
 
 <hr>
 
-<b>Make Sure To Include</b> the Lock in the BlockEntityTag and set its value to <b>"CustomBlocks:Block"</b><br>
+<b>Make Sure To Include</b> the lock component and set its value to <b>"custom_blocks:block"</b><br>
 This tells the API that your block uses this Custom Blocks API system.
 
-Then add your custom block name and an optional lore for the block. Outside the display tag add your custom blocks CustomModelData value.
+Then add your custom block name, an optional lore for the block, and add your custom blocks custom_model_data value.
 
-Finally, add any extra information about the block for when it's placed in the "BlockProperties" tag. All the information in this tag will be copied to the Item Display, the "BaseBlock" in BlockProperties says what you want your base block to be, the value must be a valid block id.
+Finally, add any extra information about the block for when it's placed in the "block_properties" tag. All the information in this tag will be copied to the Item Display, the "base_block" in block_properties says what you want your base block to be, the value must be a valid block id.
 
 For help on how to set these up see the above give command for an example.
 
 ## Minimum Minecraft Version
 
-* 1.20.3
+* 1.20.5
 
 ## About This Project
 

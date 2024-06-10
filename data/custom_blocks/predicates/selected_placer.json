@@ -4,7 +4,7 @@
     "predicate": {
         "equipment": {
             "mainhand": {
-                "tag": "custom_blocks:placers"
+                "items": "#custom_blocks:placers"
             }
         }
     }

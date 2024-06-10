@@ -1,5 +1,6 @@
 {
     "values": [
-        "custom_blocks:main"
+        "custom_blocks:main",
+        "custom_blocks:break/spawn_drop"
     ]
 }
