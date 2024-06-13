@@ -8,7 +8,17 @@ To use the Custom Blocks API simply include it alongside your datapack and ensur
 ### Give Command
 If your pack includes a custom give command this is what the function should look like with this API:
 ```mcfunction
-give @s dropper[item_name='{"text":"A Name"}',lore=['{"text":"A Lore","italic":false,"color":"red"}'],custom_model_data="0000001",lock="custom_blocks:block",custom_data={block_properties:{Tags:["some_tag_for_this_block"],base_block:{value:"stone"}}}]
+give @s dropper[item_name='{"text":"A Name"}',\  
+    lore=['{"text":"A Lore","italic":false,"color":"red"}'],\
+    custom_model_data=1,\
+    lock="custom_blocks:block",\
+    custom_data={\
+        block_properties:{\
+            Tags:["some_tag_for_this_block"],\
+            base_block:{value:"stone"}\
+        }\
+    }\
+]
 ```
 
 To set up your custom blocks with this API simple add the custom models to one of the following blocks with "custom_model_data":
@@ -30,7 +40,7 @@ For help on how to set these up see the above give command for an example.
 
 ## Minimum Minecraft Version
 
-* 1.20.5
+* 1.21
 
 ## About This Project
 
