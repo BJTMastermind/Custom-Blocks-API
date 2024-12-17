@@ -1,4 +1,0 @@
-{
-    "function": "set_components",
-    "components": {"minecraft:lock": "custom_blocks:block"}
-}
