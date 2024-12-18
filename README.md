@@ -10,7 +10,7 @@ If your pack includes a custom give command this is what the function should loo
 ```mcfunction
 give @s dropper[item_name='{"text":"A Name"}',\
     lore=['{"text":"A Lore","italic":false,"color":"red"}'],\
-    custom_model_data=1,\
+    custom_model_data={floats:[1]},\
     lock={"minecraft:custom_name": "'custom_blocks:block'"},\
     custom_data={\
         block_properties:{\
@@ -21,7 +21,7 @@ give @s dropper[item_name='{"text":"A Name"}',\
 ]
 ```
 
-To set up your custom blocks with this API simple add the custom models to one of the following blocks with "custom_model_data":
+To set up your custom blocks with this API simple add the custom models to one of the following blocks with "custom_model_data" (Supports all custom model data types):
 
 * Dispenser = Your custom block has no rotation.
 * Furnace = Your custom block can face in the 4 cardinal directions.
